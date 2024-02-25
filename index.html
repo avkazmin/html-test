@@ -5,24 +5,145 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-      consequuntur quam nisi molestiae quae doloribus commodi dicta ut expedita
-      nemo. Dolores possimus alias rerum fugit sed quis non totam, <br />
-      dolorum eligendi amet officia, facere velit consequuntur repellendus nobis
-      voluptatem voluptas est magni deserunt reiciendis mollitia, iure tenetur!
-      Quis, reiciendis?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-      perferendis magnam aliquid fugiat soluta eum. Repellendus commodi,
-      delectus aperiam perspiciatis neque, at explicabo a, perferendis ab
-      deleniti error tempora quis.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, magnam.
-    </p>
+    <header>
+      <nav>
+        <a href="#">Меню 1</a>
+        <a href="#">Меню 2</a>
+      </nav>
+    </header>
+    <section>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <img src="./images/img1.jpg" alt="My image" />
+      <p>
+        Lorem ipsum dolor sit amet,
+        <span style="color: red">consectetur</span> adipisicing elit. &amp;
+        Veritatis consequuntur quam nisi molestiae quae doloribus commodi dicta
+        ut expedita nemo. Dolores possimus alias rerum fugit sed quis non totam,
+        <br />
+        dolorum eligendi amet officia, facere velit consequuntur
+        <sup><a href="./index.html">1</a></sup> repellendus nobis voluptatem
+        voluptas est magni deserunt reiciendis mollitia, iure tenetur! Quis,
+        reiciendis?
+        <a href="https://miro.com/ru/" target="_blank">Miro</a>
+      </p>
+      <a href="https://miro.com/ru/" target="_blank">Miro</a>
+      <a href="https://miro.com/ru/" target="_blank">Miro</a>
+      <hr />
+      <form action="/register" method="get">
+        First name: <input type="text" name="first_name" /><br />
+        E-mail: <input type="email" name="user_mail" id="" /><br />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <ul>
+        <li>
+          Пункт
+          <ul>
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+          </ul>
+        </li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+      </ul>
+      <ol>
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+      </ol>
+      <div class="div">
+        <a href="https://miro.com/ru/" target="_blank">Miro</a>
+        <a href="https://miro.com/ru/" target="_blank">Miro</a>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+        perferendis magnam aliquid fugiat soluta eum. Repellendus commodi,
+        delectus aperiam perspiciatis neque, at explicabo a, perferendis ab
+        deleniti error tempora quis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, magnam.
+      </p>
+    </section>
+    <section>
+      <table>
+        <caption>
+          Структура расходов
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Статья</th>
+            <th colspan="2">Сумма</th>
+          </tr>
+          <tr>
+            <th>RUB</th>
+            <th>$</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Зарплата</td>
+            <td>100 000</td>
+            <td>2 000</td>
+          </tr>
+          <tr>
+            <td>Сервисы</td>
+            <td>500 000</td>
+            <td>7 000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td>Итог</td>
+          <td>600 000</td>
+          <td>9 000</td>
+        </tfoot>
+      </table>
+    </section>
+    <section>
+      <table>
+        <caption>
+          Таблица расходов и доходов
+        </caption>
+        <thead>
+          <tr>
+            <th>Год</th>
+            <th colspan="2">2023</th>
+            <th colspan="2">2024</th>
+          </tr>
+          <tr>
+            <th>Полугодие</th>
+            <th>1</th>
+            <th>2</th>
+            <th>1</th>
+            <th>2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Доход</td>
+            <td>1500$</td>
+            <td>1800$</td>
+            <td>2000$</td>
+            <td>3000$</td>
+          </tr>
+          <tr>
+            <td>Расход</td>
+            <td>-500$</td>
+            <td>-600$</td>
+            <td>-700$</td>
+            <td>-1000$</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td>Итог</td>
+          <td>1000$</td>
+          <td>1200$</td>
+          <td>1300$</td>
+          <td>2000$</td>
+        </tfoot>
+      </table>
+    </section>
+    <footer>Футер</footer>
   </body>
 </html>
