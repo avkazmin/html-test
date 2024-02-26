@@ -6,10 +6,90 @@
     <title>Demo</title>
   </head>
   <body>
-    <form action="/test">
-        <input type="text" placeholder="Имя пользователя" /><br />
-        <input type="email" placeholder="E-mail пользователя" id="" /><br />
-        <input type="password" placeholder="Пароль пользователя"> </br>
-        <input type="submit" value="Submit" />
+    <form action="#">
+      <!-- <input type="hidden" /> -->
+      <!-- <div>
+        <label for="email">Введите email</label>
+        <input
+          type="email"
+          placeholder="E-mail пользователя"
+          id="email"
+          name="email"
+        />
+      </div>
+      <div>
+        <label for="password">Введите пароль</label>
+        <input
+          type="password"
+          placeholder="Пароль пользователя"
+          id="password"
+          name="password"
+        />
+      </div>
+      <button type="reset">Кнопка</button>
+      <input type="submit" value="Кнопка submit" /> -->
+      <div>
+        <label for="query">Введите запрос</label>
+        <input
+          type="text"
+          placeholder="Запрос..."
+          id="query"
+          name="search_query"
+          title="Только цифры"
+          minlength="3"
+          maxlength="20"
+          pattern="/^d+$/"
+          required
+        />
+      </div>
+      <div>
+        <label for="agree">Согласен с обработкой данных</label>
+        <input type="checkbox" name="agree" id="agree" />
+      </div>
+      <div>
+        <label for="all">Поиск по всюду</label>
+        <input type="radio" name="search" id="all" value="all" />
+      </div>
+      <div>
+        <label for="Youtube">Поиск на Youtube</label>
+        <input type="radio" name="search" id="Youtube" value="Youtube" />
+      </div>
+      <div>
+        <label for="topic">Тематика</label>
+        <select name="topic" id="topic">
+          <option value="1">Все</option>
+          <optgroup label="Популярные">
+            <option value="2">Животные</option>
+            <option value="3" selected>Разработка</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="volume">Громкость</label>
+        <input
+          type="range"
+          name="volume"
+          id="volume"
+          min="0"
+          max="10"
+          step="2"
+        />
+      </div>
+      <div>
+        <label for="num">Оценка</label>
+        <input type="number" name="num" id="num" min="1" max="5" step="1" />
+      </div>
+      <div>
+        <label for="text">Коментарий</label>
+        <textarea
+          name="text"
+          id="text"
+          cols="30"
+          rows="10"
+          placeholder="Введите чтото"
+        ></textarea>
+      </div>
+      <button>Искать на Youtube</button>
+    </form>
   </body>
 </html>
