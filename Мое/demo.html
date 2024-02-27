@@ -4,11 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <form action="#">
-      <!-- <input type="hidden" /> -->
-      <!-- <div>
+    <main>
+      <h1>Свяжитесь со мной</h1>
+      <form action="#">
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Введите email"
+            name="email"
+            required
+          />
+        </div>
+        <div>
+          <label for="telegram">Telegram</label>
+          <input
+            type="text"
+            id="telegram"
+            placeholder="Введите свой telegram"
+            name="telegram"
+          />
+        </div>
+        <div>
+          <label for="topic">Тема*</label>
+          <select name="topic" id="topic" required>
+            <option value="courses">Приобретение курсов</option>
+            <option value="feedback">Обратная связь</option>
+          </select>
+        </div>
+        <div>
+          <label for="coment">Комментарий</label>
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <button>Отправить</button>
+      </form>
+    </main>
+    <!-- <form action="#"> -->
+    <!-- <input type="hidden" /> -->
+    <!-- <div>
         <label for="email">Введите email</label>
         <input
           type="email"
@@ -28,7 +65,7 @@
       </div>
       <button type="reset">Кнопка</button>
       <input type="submit" value="Кнопка submit" /> -->
-      <div>
+    <!-- <div>
         <label for="query">Введите запрос</label>
         <input
           type="text"
@@ -89,7 +126,7 @@
           placeholder="Введите чтото"
         ></textarea>
       </div>
-      <button>Искать на Youtube</button>
-    </form>
+      <button>Искать на Youtube</button> -->
+    <!-- </form> -->
   </body>
 </html>
